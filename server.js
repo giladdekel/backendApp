@@ -8,9 +8,10 @@ const mongoose = require("mongoose");
 const app = express();
 const axios = require("axios");
 const userRouter = require("./routers/userRouter");
-
+var cors = require('cors')
 // dotenv.config();
 
+app.use(cors())
 
 
 app.use(express.json());
